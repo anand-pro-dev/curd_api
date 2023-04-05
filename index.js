@@ -24,7 +24,7 @@ app.get('/',function (req, res){
 
 
 app.use(express.json());
-app.use('/uploads',express.static('images'));
+app.use('/uploads',express.static('uploads'));
 app.use('/api', require('./routes/app.route'));
 app.use( error.errorHandler);
 
