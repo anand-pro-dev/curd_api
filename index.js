@@ -3,7 +3,7 @@ const app = express();
 const mongoose = require ("mongoose");
 const {MONGO_DB_CONFIG} = require("./config/app.config");
 const error = require("./middleware/errors");
-
+var cors = require('cors')
 
 mongoose.Promise = global.Promise;
 
